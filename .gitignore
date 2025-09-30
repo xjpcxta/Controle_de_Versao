@@ -1,0 +1,14 @@
+# Arquivos de Cache do Python
+__pycache__/
+
+# Pasta do Ambiente Virtual
+venv/
+
+# Banco de dados local
+gastos.db
+
+# Arquivos específicos do projeto a serem ignorados
+mapadealteração.txt
+
+# Arquivos de sistema operacional
+.DS_Store

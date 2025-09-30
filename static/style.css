@@ -1,0 +1,19 @@
+/* Estilos adicionais e calendário sutil de fundo */
+body::before{
+  /* Cria um grid sutil de calendário no fundo */
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: repeating-linear-gradient(0deg, rgba(0,0,0,0.02) 0 1px, transparent 1px 100px), repeating-linear-gradient(90deg, rgba(0,0,0,0.02) 0 1px, transparent 1px 100px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ajustes para garantir que o conteúdo fique acima do overlay */
+main, nav, .relative, .p-8, .p-4 {
+  position: relative;
+  z-index: 10;
+}
+
+/* Pequenas melhorias visuais */
+input[type=date]::-webkit-calendar-picker-indicator { filter: invert(0.8); }
